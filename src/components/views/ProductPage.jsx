@@ -6,7 +6,7 @@ import ProductChainChart from "../content/ProductChainChart"
 
 
 const ProductPage = (props) => {
-    const id = props.match.params.id
+    const id = parseInt(props.match.params.id)
 
     useEffect(() => {
         console.log('Showing page for', id)
