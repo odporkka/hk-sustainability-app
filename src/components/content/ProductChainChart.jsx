@@ -94,7 +94,7 @@ const ProductChainChart = (props) => {
             <Grid item xs={12} className={classes.WQ}>
                 <Button className={classes.button} onClick={clickHandler}>
                 <Typography variant='h5'  align='center'>
-                        Wellness Quotient:
+                    Welfare Quality:
                 </Typography>
                 <Typography variant='h3'  align='center'>
                     {farmData.index} / 100
