@@ -1,6 +1,9 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import Grid from '@material-ui/core/Grid'
 import { makeStyles } from "@material-ui/core/styles"
+import ComparatorPopup from './ComparatorPopup'
+import ComparatorPopupHook from '../hooks/ComparatorPopupHook'
+import Button from '@material-ui/core/Button';
 
 import junctionData from '../../data/data.json'
 
@@ -13,23 +16,35 @@ const useStyles = makeStyles(() => ({
     barChart: {
         // height: 200,
         marginTop: 50
+    },
+    WQ: {
+        marginTop: 30
+    },
+    button: {
+        width: 300,
+        marginLeft: "auto",
+        marginRight: "auto",
+        display: "block"
     }
 }))
 
 const ProductChainChart = (props) => {
+    const {isShowing, toggle, clickPosition, position} = ComparatorPopupHook();
+
     const {
         id
     } = props
     const classes = useStyles()
-    console.log(junctionData)
 
     const farmData = junctionData.find((farm) => (farm.id === id))
     const farmType = farmData.water.productionType.toLowerCase()
     const farmCO2 = farmData.carbonFootprint[farmType]
     const waterPerAnimal = ((farmData.water.waterUsage / farmData.water.numberOfAnimals) * 1000).toFixed(2)
 
-    console.log(farmData)
-    console.log(farmCO2)
+    const clickHandler = (mouseEvent) => {
+        clickPosition(mouseEvent)
+        toggle();
+    }
 
     const CO2keys = [
         "Own produced wheat",
@@ -63,6 +78,7 @@ const ProductChainChart = (props) => {
     ]
 
     return (
+    <div>
         <Grid container className={classes.chartContainer} >
             <Grid item xs={12} className={classes.barChart}>
                 <Typography variant='h5'  align='center'>
@@ -74,6 +90,16 @@ const ProductChainChart = (props) => {
                 <Typography variant='body1'  align='center'>
                     (per one kg of meat produced)
                 </Typography>
+            </Grid>
+            <Grid item xs={12} className={classes.WQ}>
+                <Button className={classes.button} onClick={clickHandler}>
+                <Typography variant='h5'  align='center'>
+                        Wellness Quotient:
+                </Typography>
+                <Typography variant='h3'  align='center'>
+                    {farmData.index} / 100
+                </Typography>
+                 </Button>
             </Grid>
             <Grid item xs={12} className={classes.barChart}>
                 <Typography variant='h5'  align='center'>
@@ -97,6 +123,8 @@ const ProductChainChart = (props) => {
                 {/*<BarChart data={WaterData} keys={WaterKeys}/>*/}
             </Grid>
         </Grid>
+        <ComparatorPopup isShowing={isShowing} hide={toggle} position={position} farm={farmData} toggle={toggle}/>
+        </div>
     )
 }
 

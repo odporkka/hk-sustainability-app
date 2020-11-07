@@ -5,7 +5,8 @@ import { ResponsiveBar } from '@nivo/bar'
 const BarChart = (props) => {
     const {
         data,
-        keys
+        keys,
+        clickHandler
     } = props
 
     const theme = {
@@ -42,6 +43,7 @@ const BarChart = (props) => {
             data={data}
             keys={keys}
             height={200}
+            isInteractive={false}
             theme={theme}
             indexBy='type'
             maxValue='100'
@@ -73,6 +75,7 @@ const BarChart = (props) => {
                     itemDirection: 'left-to-right',
                     itemOpacity: 0.85,
                     symbolSize: 20,
+                    onClick:(event, mouseEvent) =>clickHandler(event, mouseEvent),
                     effects: [
                         {
                             on: 'hover',

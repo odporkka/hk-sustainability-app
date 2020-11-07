@@ -1,7 +1,6 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid'
 
-import junctionData from '../../data/data.json'
 import GeneralHeader from "../content/GeneralHeader"
 import {makeStyles} from "@material-ui/core/styles"
 
@@ -12,8 +11,6 @@ const useStyles = makeStyles(() => ({
 
 const ProductPage = (props) => {
     const classes = useStyles()
-
-    console.log(junctionData)
 
     return (
         <Grid container item xs={12} spacing={2}>

@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "index": 80,
         "water": {
             "productionType": "Broiler",
             "numberOfAnimals": 455000,
@@ -50,6 +51,7 @@
     },
     {
         "id": 2,
+        "index": 90,
         "water": {
             "productionType": "Broiler",
             "numberOfAnimals": 433000,
@@ -99,6 +101,7 @@
     },
     {
         "id": 3,
+        "index": 80,
         "water": {
             "productionType": "Broiler",
             "numberOfAnimals": 495000,
@@ -148,6 +151,7 @@
     },
     {
         "id": 4,
+        "index": 70,
         "water": {
             "productionType": "Broiler",
             "numberOfAnimals": 450000,
@@ -197,6 +201,7 @@
     },
     {
         "id": 5,
+        "index": 70,
         "water": {
             "productionType": "Broiler",
             "numberOfAnimals": 452000,
@@ -246,6 +251,7 @@
     },
     {
         "id": 6,
+        "index": 95,
         "water": {
             "productionType": "Broiler",
             "numberOfAnimals": 470000,
@@ -295,6 +301,7 @@
     },
     {
         "id": 7,
+        "index": 97,
         "water": {
             "productionType": "Broiler",
             "numberOfAnimals": 425000,
@@ -344,6 +351,7 @@
     },
     {
         "id": 8,
+        "index": 93,
         "water": {
             "productionType": "Broiler",
             "numberOfAnimals": 420000,
@@ -393,6 +401,7 @@
     },
     {
         "id": 9,
+        "index": 90,
         "water": {
             "productionType": "Broiler",
             "numberOfAnimals": 456000,
@@ -442,6 +451,7 @@
     },
     {
         "id": 10,
+        "index": 91,
         "water": {
             "productionType": "Broiler",
             "numberOfAnimals": 455000,
@@ -491,6 +501,7 @@
     },
     {
         "id": 11,
+        "index": 80,
         "water": {
             "productionType": "Beef",
             "numberOfAnimals": 800,
@@ -540,6 +551,7 @@
     },
     {
         "id": 12,
+        "index": 80,
         "water": {
             "productionType": "Beef",
             "numberOfAnimals": 180,
@@ -589,6 +601,7 @@
     },
     {
         "id": 13,
+        "index": 80,
         "water": {
             "productionType": "Beef",
             "numberOfAnimals": 520,
@@ -638,6 +651,7 @@
     },
     {
         "id": 14,
+        "index": 80,
         "water": {
             "productionType": "Beef",
             "numberOfAnimals": 340,
@@ -687,6 +701,7 @@
     },
     {
         "id": 15,
+        "index": 80,
         "water": {
             "productionType": "Pork",
             "numberOfAnimals": 3800,
@@ -736,6 +751,7 @@
     },
     {
         "id": 16,
+        "index": 80,
         "water": {
             "productionType": "Pork",
             "numberOfAnimals": 2900,
@@ -785,6 +801,7 @@
     },
     {
         "id": 17,
+        "index": 80,
         "water": {
             "productionType": "Pork",
             "numberOfAnimals": 3900,
@@ -834,6 +851,7 @@
     },
     {
         "id": 18,
+        "index": 80,
         "water": {
             "productionType": "Pork",
             "numberOfAnimals": 4100,
@@ -883,6 +901,7 @@
     },
     {
         "id": 19,
+        "index": 80,
         "water": {
             "productionType": "Pork",
             "numberOfAnimals": 3600,

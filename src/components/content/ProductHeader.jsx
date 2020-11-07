@@ -31,7 +31,7 @@ const ProductHeader = (props) => {
                 <img src='./HKScan_logo.png' className={classes.logo} />
             </div>
             <Typography variant='h2' align='center' className={classes.title}>
-                Esimerkki Tila {1}
+                Esimerkki Tila {id}
             </Typography>
             <Typography variant='h5' align='center' className={classes.title}>
                 with love and care!
