@@ -16,7 +16,7 @@ const useStyles = makeStyles(() => ({
     //     flexDirection: 'column'
     // },
     mainContainer: {
-        // maxHeight: 1200
+        height: '100%'
     },
     mainGrid: {
         flex: 1
@@ -29,10 +29,9 @@ function App() {
 
     return (
         <ThemeProvider theme={theme}>
+            <CssBaseline />
             <Paper>
                 <Container className={classes.mainContainer}>
-                    <CssBaseline />
-
                     <Grid container className={classes.mainGrid} justify='center' spacing={4}>
                         <Router />
                     </Grid>
