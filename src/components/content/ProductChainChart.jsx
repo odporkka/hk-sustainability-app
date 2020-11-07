@@ -12,7 +12,7 @@ import {Typography} from "@material-ui/core"
 const useStyles = makeStyles(() => ({
     barChart: {
         // height: 200,
-        // marginTop: 50
+        marginTop: 50
     }
 }))
 
@@ -26,33 +26,28 @@ const ProductChainChart = (props) => {
     const farmData = junctionData.find((farm) => (farm.id === id))
     const farmType = farmData.water.productionType.toLowerCase()
     const farmCO2 = farmData.carbonFootprint[farmType]
+    const waterPerAnimal = ((farmData.water.waterUsage / farmData.water.numberOfAnimals) * 1000).toFixed(2)
 
     console.log(farmData)
     console.log(farmCO2)
 
     const CO2keys = [
-        "wheatOwnProduction",
-        "wheatPurchased",
-        "industrialFeed",
-        "manureSystem",
-        "energy",
-        "other"
+        "Own produced wheat",
+        "Purchased wheat",
+        "Industrial feed",
+        "Manure system",
+        "Energy",
+        "Other"
     ]
     const CO2chartData = [
         {
             'type': 'CO2',
-            "wheatOwnProduction": 2,
-            "wheatOwnProductionColor": "hsl(195, 70%, 50%)",
-            "wheatPurchased": 5,
-            "wheatPurchasedColor": "hsl(176, 70%, 50%)",
-            "industrialFeed": 6,
-            "industrialFeedColor": "hsl(270, 70%, 50%)",
-            "manureSystem": 10,
-            "manureSystemColor": "hsl(330, 70%, 50%)",
-            "energy": 12,
-            "energyColor": "hsl(16, 70%, 50%)",
-            "other": 1,
-            "otherColor": "hsl(157, 70%, 50%)",
+            "Own produced wheat": farmCO2.Co2percentage.wheatOwnProduction,
+            "Purchased wheat": farmCO2.Co2percentage.wheatPurchased,
+            "Industrial feed": farmCO2.Co2percentage.industrialFeed,
+            "Manure system": farmCO2.Co2percentage.manureSystem,
+            "Energy": farmCO2.Co2percentage.energy,
+            "Other": farmCO2.Co2percentage.other,
         }
     ]
     const WaterKeys = [
@@ -63,9 +58,7 @@ const ProductChainChart = (props) => {
         {
             'type': 'Water',
             "drinkingWater": 2,
-            "drinkingWaterColor": "hsl(195, 70%, 50%)",
             "washWaterEtc": 5,
-            "washWaterEtcColor": "hsl(176, 70%, 50%)",
         }
     ]
 
@@ -73,7 +66,7 @@ const ProductChainChart = (props) => {
         <Grid container className={classes.chartContainer} >
             <Grid item xs={12} className={classes.barChart}>
                 <Typography variant='h5'  align='center'>
-                    Carbon footprint of this product: <br />
+                    Carbon footprint of this product:
                 </Typography>
                 <Typography variant='h3'  align='center'>
                     {farmCO2.co2ePerKgMeat} kg of CO2
@@ -81,19 +74,27 @@ const ProductChainChart = (props) => {
                 <Typography variant='body1'  align='center'>
                     (per one kg of meat produced)
                 </Typography>
-                <Typography variant='body1'  align='center'>
-                    You can click on descriptions to see more details how different parts of production chain compare to other farms.
-                </Typography>
-                <BarChart data={CO2chartData} keys={CO2keys}/>
             </Grid>
             <Grid item xs={12} className={classes.barChart}>
                 <Typography variant='h5'  align='center'>
-                    Water used to produce this product
+                    What contributes in this CO2 value?
+                </Typography>
+                {/*<Typography variant='body1'  align='center'>*/}
+                {/*    You can click on descriptions to see more details how different parts of production chain compare to other farms.*/}
+                {/*</Typography>*/}
+                <BarChart data={CO2chartData} keys={CO2keys}/>
+            </Grid>
+            <Grid item xs={12} >
+                <Typography variant='h6'  align='center'>
+                    This farm uses
+                </Typography>
+                <Typography variant='h4'  align='center'>
+                    { waterPerAnimal } liters of water per animal
                 </Typography>
                 <Typography variant='body1'  align='center'>
-                    You can click on descriptions to see more details how different parts of water usage compare to other farms.
+                    (Includes drinking water and washing water)
                 </Typography>
-                <BarChart data={WaterData} keys={WaterKeys}/>
+                {/*<BarChart data={WaterData} keys={WaterKeys}/>*/}
             </Grid>
         </Grid>
     )

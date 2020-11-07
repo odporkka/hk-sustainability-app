@@ -6,7 +6,13 @@ import {makeStyles} from "@material-ui/core/styles"
 // MUI styles
 const useStyles = makeStyles(() => ({
     title: {
-        marginTop: 60
+    },
+    logoContainer: {
+        display: 'flex',
+        justifyContent: 'center'
+    },
+    logo: {
+        height: 150,
     }
 }))
 
@@ -17,9 +23,21 @@ const ProductHeader = (props) => {
     const classes = useStyles()
 
     return (
-        <Typography variant='h3' align='center' className={classes.title}>
-            This product is produced by Esimerkki Tila with love and care!
-        </Typography>
+        <>
+            <Typography variant='h5' align='center' className={classes.title}>
+                This product is produced by
+            </Typography>
+            <div className={classes.logoContainer}>
+                <img src='./HKScan_logo.png' className={classes.logo} />
+            </div>
+            <Typography variant='h2' align='center' className={classes.title}>
+                Esimerkki Tila {1}
+            </Typography>
+            <Typography variant='h5' align='center' className={classes.title}>
+                with love and care!
+            </Typography>
+        </>
+
     )
 }
 
