@@ -27,7 +27,7 @@
     <script>
       const el = document.querySelector("#subtext");
       let i = 0;
-      const models = ["./co2text.gltf", "cartext.gltf"];
+      const models = ["./co2text.gltf", "cartext.gltf", "./avotext.gltf"];
       setInterval(() => {
         el.setAttribute("gltf-model", models[i++ % models.length]);
       }, 4000);
