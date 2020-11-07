@@ -5,12 +5,14 @@ import { makeStyles } from "@material-ui/core/styles"
 import junctionData from '../../data/data.json'
 
 import BarChart from './BarChart'
+import {Typography} from "@material-ui/core"
 
 
 // MUI styles
 const useStyles = makeStyles(() => ({
     barChart: {
-        height: 200
+        height: 200,
+        marginTop: 50
     }
 }))
 
@@ -68,11 +70,23 @@ const ProductChainChart = (props) => {
     ]
 
     return (
-        <Grid container className={classes.chartContainer} spacing={2}>
+        <Grid container className={classes.chartContainer} >
             <Grid item xs={12} className={classes.barChart}>
+                <Typography variant='h5'  align='center' className={classes.title}>
+                    Carbon footprint of this product
+                </Typography>
+                <Typography variant='body1'  align='center' className={classes.title}>
+                    You can click on descriptions to see more details how different parts of production chain compare to other farms.
+                </Typography>
                 <BarChart data={CO2chartData} keys={CO2keys}/>
             </Grid>
             <Grid item xs={12} className={classes.barChart}>
+                <Typography variant='h6'  align='center' className={classes.title}>
+                    Water used to produce this product
+                </Typography>
+                <Typography variant='body1'  align='center' className={classes.title}>
+                    You can click on descriptions to see more details how different parts of water usage compare to other farms.
+                </Typography>
                 <BarChart data={WaterData} keys={WaterKeys}/>
             </Grid>
         </Grid>

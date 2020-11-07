@@ -16,7 +16,7 @@ const useStyles = makeStyles(() => ({
     //     flexDirection: 'column'
     // },
     mainContainer: {
-        maxHeight: 1200
+        // maxHeight: 1200
     },
     mainGrid: {
         flex: 1

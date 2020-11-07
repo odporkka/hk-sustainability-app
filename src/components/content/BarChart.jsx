@@ -41,7 +41,7 @@ const BarChart = (props) => {
         <ResponsiveBar
             data={data}
             keys={keys}
-            height='200'
+            height={200}
             theme={theme}
             indexBy='type'
             maxValue='100'
@@ -50,6 +50,7 @@ const BarChart = (props) => {
             layout="horizontal"
             valueScale={{ type: 'linear' }}
             colors={{ scheme: 'nivo' }}
+            colorBy='id'
             borderColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
             axisTop={null}
             axisRight={null}
