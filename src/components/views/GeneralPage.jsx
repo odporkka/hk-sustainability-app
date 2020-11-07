@@ -1,46 +1,30 @@
-import React, { useState, useEffect } from 'react'
-import Papa from 'papaparse';
+import React from 'react'
+import Grid from '@material-ui/core/Grid'
 
 import junctionData from '../../data/data.json'
+import GeneralHeader from "../content/GeneralHeader"
+import {makeStyles} from "@material-ui/core/styles"
+
+// MUI styles
+const useStyles = makeStyles(() => ({
+}))
+
 
 const ProductPage = (props) => {
-    const [data, setData] = useState(junctionData)
-    useEffect( () => {
-        console.log(data);
-    }, []);
+    const classes = useStyles()
 
-    /*
-    useEffect(async () => {
-        const getCsvData = async () => {
-            let csvData = await fetchCsv()
-
-            Papa.parse(csvData, {
-                complete: () => setData(csvData)
-            });
-        }
-
-        await getCsvData()
-    })
-
-    const fetchCsv = async () => {
-        return fetch('data/water_foorprint_water_user_in_farms.csv').then(function (response) {
-            let reader = response.body.getReader();
-            let decoder = new TextDecoder('utf-8');
-
-            return reader.read().then(function (result) {
-                return decoder.decode(result.value);
-            });
-        });
-    }
-    */
-
+    console.log(junctionData)
 
     return (
-        <div>
-            <p>General info view</p>
-            <img src='./sausage.png' />
-            <code>{JSON.stringify(data)}</code>
-        </div>
+        <Grid container item xs={12} spacing={2}>
+            <Grid item xs={12} >
+                <GeneralHeader />
+            </Grid>
+
+            <Grid item xs={12} >
+                <img src='./sausage.png' />
+            </Grid>
+        </Grid>
     )
 }
 
