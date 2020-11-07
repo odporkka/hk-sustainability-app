@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+  <!-- we import arjs version without NFT but with marker + location based support -->
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <body style="margin: 0px; overflow: hidden">
+    <a-scene embedded arjs>
+      <a-marker preset="hiro">
+        <a-entity
+          position="0 0 0"
+          scale="0.15 0.15 0.15"
+          rotation="0 0 0"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear"
+          gltf-model="./scene.gltf"
+        ></a-entity>
+        <a-entity
+          position="0 1.5 0"
+          scale="0.35 0.35 0.35"
+          rotation="90 0 0"
+          gltf-model="./co2text.gltf"
+          material="color: red"
+          id="subtext"
+        ></a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+    <script>
+      const el = document.querySelector("#subtext");
+      let i = 0;
+      const models = ["./co2text.gltf", "cartext.gltf"];
+      setInterval(() => {
+        el.setAttribute("gltf-model", models[i++ % models.length]);
+      }, 4000);
+    </script>
+  </body>
+</html>
