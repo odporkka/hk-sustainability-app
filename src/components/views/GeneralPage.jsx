@@ -1,8 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import Papa from 'papaparse';
 
+import junctionData from '../../data/data.json'
+
 const ProductPage = (props) => {
-    const [data, setData] = useState([])
+    const [data, setData] = useState(junctionData)
+    useEffect( () => {
+        console.log(data);
+    }, []);
+
+    /*
     useEffect(async () => {
         const getCsvData = async () => {
             let csvData = await fetchCsv()
@@ -25,13 +32,14 @@ const ProductPage = (props) => {
             });
         });
     }
+    */
 
 
     return (
         <div>
             <p>General info view</p>
             <img src='./sausage.png' />
-            <p>{data}</p>
+            <code>{JSON.stringify(data)}</code>
         </div>
     )
 }

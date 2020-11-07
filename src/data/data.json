@@ -1,0 +1,933 @@
+[
+    {
+        "id": 1,
+        "water": {
+            "productionType": "Broiler",
+            "numberOfAnimals": 455000,
+            "waterUsage": 3035.5,
+            "drinkingWater": 2825.5,
+            "washWaterEtc": 210
+        },
+        "carbonFootprint": {
+            "broiler": {
+                "total": 1889525,
+                "co2ePerKgMeat": 2.5,
+                "Co2percentage": {
+                    "wheatOwnProduction": 10.7,
+                    "wheatPurchased": 0,
+                    "industrialFeed": 57.3,
+                    "manureSystem": 16.3,
+                    "energy": 6.4,
+                    "other": 9.3
+                }
+            },
+            "pork": {
+                "total": 3490088,
+                "co2ePerKgMeat": 4.3,
+                "Co2percentage": {
+                    "feeds": 78.1,
+                    "energy": 4.6,
+                    "beddings": 0,
+                    "manureSystem": 14.1,
+                    "animalDigestion": 2.4,
+                    "transport": 0.8
+                }
+            },
+            "beef": {
+                "total": "",
+                "co2ePerKgMeat": 7.86,
+                "Co2percentage": {
+                    "feedsProducedInFarm": 3.35,
+                    "purchasedFeeds": 0.34,
+                    "ruminantDigestion": 2.59,
+                    "manureSystem": 0.87,
+                    "productionOfCalvesPurchased": 0.44,
+                    "energy": 0.24,
+                    "other": 0.03
+                }
+            }
+        }
+    },
+    {
+        "id": 2,
+        "water": {
+            "productionType": "Broiler",
+            "numberOfAnimals": 433000,
+            "waterUsage": 2801.5,
+            "drinkingWater": 2611.5,
+            "washWaterEtc": 190
+        },
+        "carbonFootprint": {
+            "broiler": {
+                "total": 1835022,
+                "co2ePerKgMeat": 2.3,
+                "Co2percentage": {
+                    "wheatOwnProduction": 5,
+                    "wheatPurchased": 0,
+                    "industrialFeed": 64.8,
+                    "manureSystem": 17.5,
+                    "energy": 2.7,
+                    "other": 10
+                }
+            },
+            "pork": {
+                "total": 2381671,
+                "co2ePerKgMeat": 3.2,
+                "Co2percentage": {
+                    "feeds": 67.2,
+                    "energy": 4.7,
+                    "beddings": 0,
+                    "manureSystem": 21.7,
+                    "animalDigestion": 5.2,
+                    "transport": 1.2
+                }
+            },
+            "beef": {
+                "total": "",
+                "co2ePerKgMeat": 9.27,
+                "Co2percentage": {
+                    "feedsProducedInFarm": 1.42,
+                    "purchasedFeeds": 2.88,
+                    "ruminantDigestion": 3.11,
+                    "manureSystem": 0.89,
+                    "productionOfCalvesPurchased": 0.46,
+                    "energy": 0.45,
+                    "other": 0.07
+                }
+            }
+        }
+    },
+    {
+        "id": 3,
+        "water": {
+            "productionType": "Broiler",
+            "numberOfAnimals": 495000,
+            "waterUsage": 3200,
+            "drinkingWater": 3000,
+            "washWaterEtc": 200
+        },
+        "carbonFootprint": {
+            "broiler": {
+                "total": 1699024,
+                "co2ePerKgMeat": 2.5,
+                "Co2percentage": {
+                    "wheatOwnProduction": 7.8,
+                    "wheatPurchased": 0,
+                    "industrialFeed": 64.8,
+                    "manureSystem": 15.8,
+                    "energy": 2.4,
+                    "other": 9.2
+                }
+            },
+            "pork": {
+                "total": 2849638,
+                "co2ePerKgMeat": 3,
+                "Co2percentage": {
+                    "feeds": 63,
+                    "energy": 5.2,
+                    "beddings": 0,
+                    "manureSystem": 24.7,
+                    "animalDigestion": 6,
+                    "transport": 1.1
+                }
+            },
+            "beef": {
+                "total": "",
+                "co2ePerKgMeat": 8.14,
+                "Co2percentage": {
+                    "feedsProducedInFarm": 1.29,
+                    "purchasedFeeds": 1.78,
+                    "ruminantDigestion": 2.28,
+                    "manureSystem": 0.77,
+                    "productionOfCalvesPurchased": 1.62,
+                    "energy": 0.36,
+                    "other": 0.04
+                }
+            }
+        }
+    },
+    {
+        "id": 4,
+        "water": {
+            "productionType": "Broiler",
+            "numberOfAnimals": 450000,
+            "waterUsage": 2998,
+            "drinkingWater": 2788,
+            "washWaterEtc": 210
+        },
+        "carbonFootprint": {
+            "broiler": {
+                "total": 2562468,
+                "co2ePerKgMeat": 2.5,
+                "Co2percentage": {
+                    "wheatOwnProduction": 6.7,
+                    "wheatPurchased": 0,
+                    "industrialFeed": 65.7,
+                    "manureSystem": 15.9,
+                    "energy": 2.4,
+                    "other": 9.3
+                }
+            },
+            "pork": {
+                "total": 2507147,
+                "co2ePerKgMeat": 2.8,
+                "Co2percentage": {
+                    "feeds": 66.9,
+                    "energy": 2.6,
+                    "beddings": 0,
+                    "manureSystem": 23.7,
+                    "animalDigestion": 5.8,
+                    "transport": 1
+                }
+            },
+            "beef": {
+                "total": "",
+                "co2ePerKgMeat": 7.52,
+                "Co2percentage": {
+                    "feedsProducedInFarm": 2.6,
+                    "purchasedFeeds": 0.77,
+                    "ruminantDigestion": 2.8,
+                    "manureSystem": 0.54,
+                    "productionOfCalvesPurchased": 0.41,
+                    "energy": 0.35,
+                    "other": 0.04
+                }
+            }
+        }
+    },
+    {
+        "id": 5,
+        "water": {
+            "productionType": "Broiler",
+            "numberOfAnimals": 452000,
+            "waterUsage": 3010,
+            "drinkingWater": 2840,
+            "washWaterEtc": 170
+        },
+        "carbonFootprint": {
+            "broiler": {
+                "total": 2061051,
+                "co2ePerKgMeat": 2.5,
+                "Co2percentage": {
+                    "wheatOwnProduction": 12.4,
+                    "wheatPurchased": 0,
+                    "industrialFeed": 59.8,
+                    "manureSystem": 16.2,
+                    "energy": 2.4,
+                    "other": 9.2
+                }
+            },
+            "pork": {
+                "total": 3119008,
+                "co2ePerKgMeat": 3.2,
+                "Co2percentage": {
+                    "feeds": 61.9,
+                    "energy": 6.5,
+                    "beddings": 0,
+                    "manureSystem": 24.4,
+                    "animalDigestion": 6,
+                    "transport": 1.1
+                }
+            },
+            "beef": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "feedsProducedInFarm": "",
+                    "purchasedFeeds": "",
+                    "ruminantDigestion": "",
+                    "manureSystem": "",
+                    "productionOfCalvesPurchased": "",
+                    "energy": "",
+                    "other": ""
+                }
+            }
+        }
+    },
+    {
+        "id": 6,
+        "water": {
+            "productionType": "Broiler",
+            "numberOfAnimals": 470000,
+            "waterUsage": 3244,
+            "drinkingWater": 3044,
+            "washWaterEtc": 200
+        },
+        "carbonFootprint": {
+            "broiler": {
+                "total": 5221211,
+                "co2ePerKgMeat": 2.4,
+                "Co2percentage": {
+                    "wheatOwnProduction": 9.1,
+                    "wheatPurchased": 0,
+                    "industrialFeed": 62,
+                    "manureSystem": 16.4,
+                    "energy": 2.8,
+                    "other": 9.7
+                }
+            },
+            "pork": {
+                "total": 861230,
+                "co2ePerKgMeat": 2.5,
+                "Co2percentage": {
+                    "feeds": 62.2,
+                    "energy": 3.1,
+                    "beddings": 0,
+                    "manureSystem": 26.4,
+                    "animalDigestion": 6.7,
+                    "transport": 1.6
+                }
+            },
+            "beef": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "feedsProducedInFarm": "",
+                    "purchasedFeeds": "",
+                    "ruminantDigestion": "",
+                    "manureSystem": "",
+                    "productionOfCalvesPurchased": "",
+                    "energy": "",
+                    "other": ""
+                }
+            }
+        }
+    },
+    {
+        "id": 7,
+        "water": {
+            "productionType": "Broiler",
+            "numberOfAnimals": 425000,
+            "waterUsage": 2800,
+            "drinkingWater": 2610,
+            "washWaterEtc": 190
+        },
+        "carbonFootprint": {
+            "broiler": {
+                "total": 1928258,
+                "co2ePerKgMeat": 2.3,
+                "Co2percentage": {
+                    "wheatOwnProduction": 6.5,
+                    "wheatPurchased": 0,
+                    "industrialFeed": 65.2,
+                    "manureSystem": 16.9,
+                    "energy": 1.8,
+                    "other": 9.6
+                }
+            },
+            "pork": {
+                "total": 3567197,
+                "co2ePerKgMeat": 3.3,
+                "Co2percentage": {
+                    "feeds": 75.3,
+                    "energy": 2.6,
+                    "beddings": 0,
+                    "manureSystem": 13.3,
+                    "animalDigestion": 7.8,
+                    "transport": 0.9
+                }
+            },
+            "beef": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "feedsProducedInFarm": "",
+                    "purchasedFeeds": "",
+                    "ruminantDigestion": "",
+                    "manureSystem": "",
+                    "productionOfCalvesPurchased": "",
+                    "energy": "",
+                    "other": ""
+                }
+            }
+        }
+    },
+    {
+        "id": 8,
+        "water": {
+            "productionType": "Broiler",
+            "numberOfAnimals": 420000,
+            "waterUsage": 2750,
+            "drinkingWater": 2540,
+            "washWaterEtc": 210
+        },
+        "carbonFootprint": {
+            "broiler": {
+                "total": 1970507,
+                "co2ePerKgMeat": 2.4,
+                "Co2percentage": {
+                    "wheatOwnProduction": 1.7,
+                    "wheatPurchased": 6.9,
+                    "industrialFeed": 62.3,
+                    "manureSystem": 16.4,
+                    "energy": 2.6,
+                    "other": 10
+                }
+            },
+            "pork": {
+                "total": 814241,
+                "co2ePerKgMeat": 2.8,
+                "Co2percentage": {
+                    "feeds": 65.7,
+                    "energy": 3.5,
+                    "beddings": 0,
+                    "manureSystem": 24.5,
+                    "animalDigestion": 5.8,
+                    "transport": 0.5
+                }
+            },
+            "beef": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "feedsProducedInFarm": "",
+                    "purchasedFeeds": "",
+                    "ruminantDigestion": "",
+                    "manureSystem": "",
+                    "productionOfCalvesPurchased": "",
+                    "energy": "",
+                    "other": ""
+                }
+            }
+        }
+    },
+    {
+        "id": 9,
+        "water": {
+            "productionType": "Broiler",
+            "numberOfAnimals": 456000,
+            "waterUsage": 3100,
+            "drinkingWater": 2900,
+            "washWaterEtc": 200
+        },
+        "carbonFootprint": {
+            "broiler": {
+                "total": 939131,
+                "co2ePerKgMeat": 2.4,
+                "Co2percentage": {
+                    "wheatOwnProduction": 8.2,
+                    "wheatPurchased": 0,
+                    "industrialFeed": 63.4,
+                    "manureSystem": 16.5,
+                    "energy": 1.7,
+                    "other": 10.1
+                }
+            },
+            "pork": {
+                "total": 822521,
+                "co2ePerKgMeat": 2.9,
+                "Co2percentage": {
+                    "feeds": 76.4,
+                    "energy": 6.5,
+                    "beddings": 0.3,
+                    "manureSystem": 13.2,
+                    "animalDigestion": 3,
+                    "transport": 0.6
+                }
+            },
+            "beef": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "feedsProducedInFarm": "",
+                    "purchasedFeeds": "",
+                    "ruminantDigestion": "",
+                    "manureSystem": "",
+                    "productionOfCalvesPurchased": "",
+                    "energy": "",
+                    "other": ""
+                }
+            }
+        }
+    },
+    {
+        "id": 10,
+        "water": {
+            "productionType": "Broiler",
+            "numberOfAnimals": 455000,
+            "waterUsage": 2900,
+            "drinkingWater": 2670,
+            "washWaterEtc": 230
+        },
+        "carbonFootprint": {
+            "broiler": {
+                "total": 2924727,
+                "co2ePerKgMeat": 2.4,
+                "Co2percentage": {
+                    "wheatOwnProduction": 1,
+                    "wheatPurchased": 6.7,
+                    "industrialFeed": 63.8,
+                    "manureSystem": 16.2,
+                    "energy": 2.9,
+                    "other": 9.4
+                }
+            },
+            "pork": {
+                "total": 3274597,
+                "co2ePerKgMeat": 4.5,
+                "Co2percentage": {
+                    "feeds": 65.1,
+                    "energy": 2.4,
+                    "beddings": 0,
+                    "manureSystem": 24.1,
+                    "animalDigestion": 6.1,
+                    "transport": 2.3
+                }
+            },
+            "beef": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "feedsProducedInFarm": "",
+                    "purchasedFeeds": "",
+                    "ruminantDigestion": "",
+                    "manureSystem": "",
+                    "productionOfCalvesPurchased": "",
+                    "energy": "",
+                    "other": ""
+                }
+            }
+        }
+    },
+    {
+        "id": 11,
+        "water": {
+            "productionType": "Beef",
+            "numberOfAnimals": 800,
+            "waterUsage": 18000,
+            "drinkingWater": 18000,
+            "washWaterEtc": ""
+        },
+        "carbonFootprint": {
+            "broiler": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "wheatOwnProduction": "",
+                    "wheatPurchased": "",
+                    "industrialFeed": "",
+                    "manureSystem": "",
+                    "energy": "",
+                    "other": ""
+                }
+            },
+            "pork": {
+                "total": 4231597,
+                "co2ePerKgMeat": 4.8,
+                "Co2percentage": {
+                    "feeds": 69.8,
+                    "energy": 2.1,
+                    "beddings": 0,
+                    "manureSystem": 22.1,
+                    "animalDigestion": 5.2,
+                    "transport": 0.7
+                }
+            },
+            "beef": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "feedsProducedInFarm": "",
+                    "purchasedFeeds": "",
+                    "ruminantDigestion": "",
+                    "manureSystem": "",
+                    "productionOfCalvesPurchased": "",
+                    "energy": "",
+                    "other": ""
+                }
+            }
+        }
+    },
+    {
+        "id": 12,
+        "water": {
+            "productionType": "Beef",
+            "numberOfAnimals": 180,
+            "waterUsage": 1800,
+            "drinkingWater": 1800,
+            "washWaterEtc": ""
+        },
+        "carbonFootprint": {
+		   "broiler": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "wheatOwnProduction": "",
+                    "wheatPurchased": "",
+                    "industrialFeed": "",
+                    "manureSystem": "",
+                    "energy": "",
+                    "other": ""
+                }
+            },
+            "pork": {
+                "total": 3264249,
+                "co2ePerKgMeat": 3.3,
+                "Co2percentage": {
+                    "feeds": 69.4,
+                    "energy": 3.7,
+                    "beddings": 0,
+                    "manureSystem": 20.7,
+                    "animalDigestion": 4.9,
+                    "transport": 1.2
+                }
+            },
+            "beef": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "feedsProducedInFarm": "",
+                    "purchasedFeeds": "",
+                    "ruminantDigestion": "",
+                    "manureSystem": "",
+                    "productionOfCalvesPurchased": "",
+                    "energy": "",
+                    "other": ""
+                }
+            }
+        }
+    },
+    {
+        "id": 13,
+        "water": {
+            "productionType": "Beef",
+            "numberOfAnimals": 520,
+            "waterUsage": 3500,
+            "drinkingWater": 3500,
+            "washWaterEtc": ""
+        },
+        "carbonFootprint": {
+		   "broiler": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "wheatOwnProduction": "",
+                    "wheatPurchased": "",
+                    "industrialFeed": "",
+                    "manureSystem": "",
+                    "energy": "",
+                    "other": ""
+                }
+            },
+            "pork": {
+                "total": 1575300,
+                "co2ePerKgMeat": 3.5,
+                "Co2percentage": {
+                    "feeds": 68.9,
+                    "energy": 2.4,
+                    "beddings": 0.1,
+                    "manureSystem": 21.9,
+                    "animalDigestion": 5.6,
+                    "transport": 1.2
+                }
+            },
+            "beef": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "feedsProducedInFarm": "",
+                    "purchasedFeeds": "",
+                    "ruminantDigestion": "",
+                    "manureSystem": "",
+                    "productionOfCalvesPurchased": "",
+                    "energy": "",
+                    "other": ""
+                }
+            }
+        }
+    },
+    {
+        "id": 14,
+        "water": {
+            "productionType": "Beef",
+            "numberOfAnimals": 340,
+            "waterUsage": 3700,
+            "drinkingWater": 3700,
+            "washWaterEtc": ""
+        },
+        "carbonFootprint": {
+		   "broiler": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "wheatOwnProduction": "",
+                    "wheatPurchased": "",
+                    "industrialFeed": "",
+                    "manureSystem": "",
+                    "energy": "",
+                    "other": ""
+                }
+            },
+            "pork": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "feeds": "",
+                    "energy": "",
+                    "beddings": "",
+                    "manureSystem": "",
+                    "animalDigestion": "",
+                    "transport": ""
+                }
+            },
+            "beef": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "feedsProducedInFarm": "",
+                    "purchasedFeeds": "",
+                    "ruminantDigestion": "",
+                    "manureSystem": "",
+                    "productionOfCalvesPurchased": "",
+                    "energy": "",
+                    "other": ""
+                }
+            }
+        }
+    },
+    {
+        "id": 15,
+        "water": {
+            "productionType": "Pork",
+            "numberOfAnimals": 3800,
+            "waterUsage": 2550,
+            "drinkingWater": "",
+            "washWaterEtc": ""
+        },
+        "carbonFootprint": {
+		   "broiler": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "wheatOwnProduction": "",
+                    "wheatPurchased": "",
+                    "industrialFeed": "",
+                    "manureSystem": "",
+                    "energy": "",
+                    "other": ""
+                }
+            },
+            "pork": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "feeds": "",
+                    "energy": "",
+                    "beddings": "",
+                    "manureSystem": "",
+                    "animalDigestion": "",
+                    "transport": ""
+                }
+            },
+            "beef": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "feedsProducedInFarm": "",
+                    "purchasedFeeds": "",
+                    "ruminantDigestion": "",
+                    "manureSystem": "",
+                    "productionOfCalvesPurchased": "",
+                    "energy": "",
+                    "other": ""
+                }
+            }
+        }
+    },
+    {
+        "id": 16,
+        "water": {
+            "productionType": "Pork",
+            "numberOfAnimals": 2900,
+            "waterUsage": 2150,
+            "drinkingWater": "",
+            "washWaterEtc": ""
+        },
+        "carbonFootprint": {
+		   "broiler": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "wheatOwnProduction": "",
+                    "wheatPurchased": "",
+                    "industrialFeed": "",
+                    "manureSystem": "",
+                    "energy": "",
+                    "other": ""
+                }
+            },
+            "pork": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "feeds": "",
+                    "energy": "",
+                    "beddings": "",
+                    "manureSystem": "",
+                    "animalDigestion": "",
+                    "transport": ""
+                }
+            },
+            "beef": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "feedsProducedInFarm": "",
+                    "purchasedFeeds": "",
+                    "ruminantDigestion": "",
+                    "manureSystem": "",
+                    "productionOfCalvesPurchased": "",
+                    "energy": "",
+                    "other": ""
+                }
+            }
+        }
+    },
+    {
+        "id": 17,
+        "water": {
+            "productionType": "Pork",
+            "numberOfAnimals": 3900,
+            "waterUsage": 2710,
+            "drinkingWater": "",
+            "washWaterEtc": ""
+        },
+        "carbonFootprint": {
+		   "broiler": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "wheatOwnProduction": "",
+                    "wheatPurchased": "",
+                    "industrialFeed": "",
+                    "manureSystem": "",
+                    "energy": "",
+                    "other": ""
+                }
+            },
+            "pork": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "feeds": "",
+                    "energy": "",
+                    "beddings": "",
+                    "manureSystem": "",
+                    "animalDigestion": "",
+                    "transport": ""
+                }
+            },
+            "beef": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "feedsProducedInFarm": "",
+                    "purchasedFeeds": "",
+                    "ruminantDigestion": "",
+                    "manureSystem": "",
+                    "productionOfCalvesPurchased": "",
+                    "energy": "",
+                    "other": ""
+                }
+            }
+        }
+    },
+    {
+        "id": 18,
+        "water": {
+            "productionType": "Pork",
+            "numberOfAnimals": 4100,
+            "waterUsage": 2900,
+            "drinkingWater": "",
+            "washWaterEtc": ""
+        },
+        "carbonFootprint": {
+		   "broiler": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "wheatOwnProduction": "",
+                    "wheatPurchased": "",
+                    "industrialFeed": "",
+                    "manureSystem": "",
+                    "energy": "",
+                    "other": ""
+                }
+            },
+            "pork": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "feeds": "",
+                    "energy": "",
+                    "beddings": "",
+                    "manureSystem": "",
+                    "animalDigestion": "",
+                    "transport": ""
+                }
+            },
+            "beef": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "feedsProducedInFarm": "",
+                    "purchasedFeeds": "",
+                    "ruminantDigestion": "",
+                    "manureSystem": "",
+                    "productionOfCalvesPurchased": "",
+                    "energy": "",
+                    "other": ""
+                }
+            }
+        }
+    },
+    {
+        "id": 19,
+        "water": {
+            "productionType": "Pork",
+            "numberOfAnimals": 3600,
+            "waterUsage": 2470,
+            "drinkingWater": "",
+            "washWaterEtc": ""
+        },
+        "carbonFootprint": {
+		   "broiler": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "wheatOwnProduction": "",
+                    "wheatPurchased": "",
+                    "industrialFeed": "",
+                    "manureSystem": "",
+                    "energy": "",
+                    "other": ""
+                }
+            },
+            "pork": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "feeds": "",
+                    "energy": "",
+                    "beddings": "",
+                    "manureSystem": "",
+                    "animalDigestion": "",
+                    "transport": ""
+                }
+            },
+            "beef": {
+                "total": "",
+                "co2ePerKgMeat": "",
+                "Co2percentage": {
+                    "feedsProducedInFarm": "",
+                    "purchasedFeeds": "",
+                    "ruminantDigestion": "",
+                    "manureSystem": "",
+                    "productionOfCalvesPurchased": "",
+                    "energy": "",
+                    "other": ""
+                }
+            }
+        }
+    }
+]
