@@ -4,9 +4,10 @@
   <!-- we import arjs version without NFT but with marker + location based support -->
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <body style="margin: 0px; overflow: hidden">
-    <a-scene embedded arjs>
+    <a-scene embedded arjs id="scene">
       <a-marker preset="hiro">
         <a-entity
+          id="chick"
           position="0 0 0"
           scale="0.15 0.15 0.15"
           rotation="0 0 0"
@@ -21,16 +22,51 @@
           material="color: red"
           id="subtext"
         ></a-entity>
+        <a-entity
+          position="0 0.6 0"
+          scale="0.2 0.2 0.2"
+          rotation="0 0 0"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear"
+          gltf-model="./homeloctext.gltf"
+          material="color: red"
+          id="homeloctext"
+        ></a-entity>
+        <!--<a-image
+          position="0 1.5 0"
+          scale="2.5 2.5 2.5"
+          rotation="0 0 0"
+          src="farm_chart_view.png"
+          visible="false"
+          id="charts"
+        ></a-image>-->
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
     <script>
-      const el = document.querySelector("#subtext");
+      const scene = document.querySelector("#scene");
+      const chick = document.querySelector("#chick");
+      const text = document.querySelector("#subtext");
+
       let i = 0;
-      const models = ["./co2text.gltf", "cartext.gltf", "./avotext.gltf", "./antibiotext.gltf"];
+      const models = [
+        "./co2text.gltf",
+        "cartext.gltf",
+        "./avotext.gltf",
+        "./antibiotext.gltf",
+      ];
       setInterval(() => {
-        el.setAttribute("gltf-model", models[++i % models.length]);
+        text.setAttribute("gltf-model", models[++i % models.length]);
       }, 4000);
+
+      let stage = 0;
+      // 0 = nothing
+      // 1 = charts open
+      // 2 = opening page
+      scene.addEventListener("click", function () {
+        if (stage++ == 0) {
+          location.href = "";
+        }
+      });
     </script>
   </body>
 </html>

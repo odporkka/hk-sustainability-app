@@ -5,9 +5,15 @@ import {makeStyles} from "@material-ui/core/styles"
 
 // MUI styles
 const useStyles = makeStyles(() => ({
-    header: {
-        marginTop: 30
+    title: {
     },
+    logoContainer: {
+        display: 'flex',
+        justifyContent: 'center'
+    },
+    logo: {
+        height: 150,
+    }
 }))
 
 const GeneralHeader = (props) => {
@@ -17,9 +23,14 @@ const GeneralHeader = (props) => {
 
 
     return (
-        <Typography variant='h4' className={classes.header}>
-            HKScan provides sustainable products for you!
-        </Typography>
+        <>
+            <div className={classes.logoContainer}>
+                <img src='./HKScan_logo.png' className={classes.logo} />
+            </div>
+            <Typography variant='h5' align='center' className={classes.title}>
+                Sustainable products from Finland for you!
+            </Typography>
+        </>
     )
 }
 
