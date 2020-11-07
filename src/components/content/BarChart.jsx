@@ -19,7 +19,7 @@ const BarChart = (props) => {
                     stroke: "#555555"
                 },
                 text: {
-                    fontSize: 20,
+                    fontSize: 25,
                     fill: "#ffffff"
                 }
             },
