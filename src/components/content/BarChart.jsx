@@ -75,7 +75,6 @@ const BarChart = (props) => {
                     itemDirection: 'left-to-right',
                     itemOpacity: 0.85,
                     symbolSize: 20,
-                    onClick:(event, mouseEvent) =>clickHandler(event, mouseEvent),
                     effects: [
                         {
                             on: 'hover',
