@@ -100,6 +100,9 @@ const ProductChainChart = (props) => {
                     {farmData.index} / 100
                 </Typography>
                  </Button>
+                <Typography variant='body1'  align='center'>
+                    (Click on score to view how this farm compares to other HKScan farms)
+                </Typography>
             </Grid>
             <Grid item xs={12} className={classes.barChart}>
                 <Typography variant='h5'  align='center'>
