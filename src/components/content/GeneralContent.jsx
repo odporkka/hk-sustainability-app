@@ -32,6 +32,7 @@ const GeneralContent = (props) => {
 
     return (
         <Grid container className={classes.generalInfoContainer} >
+
             <Grid container item xs={12} spacing={4}>
                 <Grid item xs={8}>
                     <Typography variant='h5' className={classes.title} >
@@ -48,6 +49,7 @@ const GeneralContent = (props) => {
                     <img src='./chickens.jpg' className={classes.image}/>
                 </Grid>
             </Grid>
+
             <Grid container item xs={12} spacing={4}>
                 <Grid item xs={4}>
                     <img src='./chickens2.jpg' className={classes.image}/>
@@ -63,7 +65,20 @@ const GeneralContent = (props) => {
                         The unnecessary use of antibiotics in the treatment of people and animals is harmful and possibly dangerous. Bacteria become resistant to antibiotics, causing drugs to become less effective. According to the World Health Organization, the spread of superbugs is a major health threat globally (OECD 2019).
                     </Typography>
                 </Grid>
+            </Grid>
 
+            <Grid container item xs={12} spacing={4}>
+                <Grid item xs={8}>
+                    <Typography variant='h5' className={classes.title} >
+                        Welfare Quality (WQ)®
+                    </Typography>
+                    <Typography variant='body1' className={classes.paragraph}>
+                        Animal welfare is important to HKScan. Therefore, we employ a thorough process to ensure proper animal welfare. Our assessments are based on EU animal welfare policy and approach animal welfare through four principles: good feeding, good housing, good health and appropriate behaviour. This is made possible on a large scale through use of advanced monitoring technology and AI machine learning solutions. We thereafter form a criteria score based on expert opinions, which has a scale of 0-100, where 50 corresponds to a neutral situation. Our criteria and the following subcriteria can be observed in the table underneath.
+                    </Typography>
+                </Grid>
+                <Grid item xs={4}>
+                    <img src='./chickens3.jpg' className={classes.image}/>
+                </Grid>
             </Grid>
         </Grid>
 
